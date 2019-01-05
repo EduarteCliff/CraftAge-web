@@ -5,6 +5,7 @@
 		public $pwd;
 		public $db;
 		
+		//提交查询
 		function query($query){
 			$connect = mysqli_connect($this->location,$this->usr,$this->pwd);
 			mysqli_select_db($connect,$this->db);
@@ -13,6 +14,7 @@
 			decode($result);
 		}
 		
+		//结果转数组
 		function decode($result){
 			$tag = 0;
 			while($row = mysqli_fetch_row($result)){
