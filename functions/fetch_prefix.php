@@ -6,6 +6,7 @@
 			$num>>1;
 			$tag++;
 		}
+		$arr[$tag] = 2;
 		return $arr;
 	}
 ?>
