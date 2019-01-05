@@ -9,4 +9,8 @@
 		$arr[$tag] = 2;
 		return $arr;
 	}
+	
+	function add_prefix($num,$tag){
+		$num += 1<<($tag-1);
+	}
 ?>
