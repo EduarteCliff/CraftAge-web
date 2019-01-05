@@ -11,6 +11,6 @@
 	}
 	
 	function add_prefix($num,$tag){
-		$num += 1<<($tag-1);
+		return $num+(1<<($tag-1));
 	}
 ?>
