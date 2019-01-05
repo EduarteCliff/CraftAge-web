@@ -34,7 +34,7 @@
 	}
 	else{
 		$page = file_get_contents("../html/index.html");
-		$page = str_replace("<!--!*usr_img*!-->","<a href='/login/'>登陆</a>",$page);
+		$page = str_replace("<!--!*usr_img*!-->","<a href='/login.php'>登陆</a>",$page);
 	}
 	echo $page;
 ?>
