@@ -1,5 +1,5 @@
 <?php
-	function fetch_prefix($num){
+	function fetch_binary($num){
 		$tag = 1;
 		while($num>0){
 			$arr[$tag] = $num&1;
@@ -10,7 +10,7 @@
 		return $arr;
 	}
 	
-	function add_prefix($num,$tag){
+	function add($num,$tag){
 		return $num+(1<<($tag-1));
 	}
 ?>
