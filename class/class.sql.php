@@ -11,15 +11,15 @@
 			mysqli_select_db($connect,$this->db);
 			if($result = mysqli_query($connect,$query)){
               	if($res){
-            	$tag = 0;
+            	    $tag = 0;
                     while($row = mysqli_fetch_row($result)){
                         $return[$tag] = $row[0];
                         $tag++;
                     }
-                  	return $return;
+                    return $return;
                 }
               	else{
-                	return 1;
+                    return 1;
                 }
             }
 		}
