@@ -5,7 +5,7 @@
 		public $pwd;
 		public $db;
 		
-      	//调用方式 query(SQL语句,[是否返回结果]);
+      	        //调用方式 query(SQL语句,[是否返回结果]);
 		function query($query,$res = 1){
 			$connect = mysqli_connect($this->location,$this->usr,$this->pwd);
 			mysqli_select_db($connect,$this->db);
